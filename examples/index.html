@@ -1,0 +1,65 @@
+<!doctype html> 
+<html lang="en-us"> 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Scrollify Demo</title>
+  <meta name="description" content="">
+  <meta name="author" content="Michael Pazienza">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- CSS -->
+  <link href="./css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="demo-1">
+  <h2>Non Auto-Generated components</h2>
+
+  <div class="mask">
+    <div class="content">
+      <p>Semiotics labore vinyl, est craft beer odd future marfa mcsweeney's american apparel swag. Adipisicing quinoa brunch, sustainable dreamcatcher twee aute excepteur chambray. Organic trust fund wayfarers cred, keffiyeh single-origin coffee post-ironic mlkshk sunt marfa jean shorts you probably haven't heard of them. Direct trade incididunt nesciunt gastropub farm-to-table pickled, excepteur sapiente truffaut godard sed. Assumenda veniam iphone, ea banh mi messenger bag +1 fixie kogi synth. Stumptown direct trade ullamco, placeat velit adipisicing ethical williamsburg irure. Squid artisan tattooed ethical enim.</p>
+
+      <p>Umami 8-bit butcher, craft beer laboris bushwick retro quis four loko authentic. Consequat put a bird on it etsy, lomo mlkshk aute semiotics. Ut street art butcher vero, qui typewriter retro photo booth freegan brooklyn incididunt art party truffaut. Keytar lomo mollit adipisicing. Shoreditch leggings esse truffaut laboris. Odio swag chillwave, pop-up twee letterpress enim retro raw denim dreamcatcher elit. Fixie pickled odio truffaut marfa, sunt deserunt.</p>
+
+      <p>Flexitarian duis incididunt, pinterest echo park wayfarers sint. Nesciunt minim incididunt photo booth est, cardigan street art commodo. Helvetica laboris cred anim farm-to-table, pork belly qui letterpress eiusmod exercitation non. Carles flexitarian craft beer semiotics enim, dolore 8-bit street art typewriter put a bird on it sint. Beard vero lo-fi ethnic marfa quinoa, retro helvetica put a bird on it pickled cosby sweater aliquip authentic consectetur. Biodiesel mustache mollit irure, small batch in lomo portland stumptown. Tumblr reprehenderit aute mollit next level, helvetica aesthetic vice biodiesel narwhal art party cillum jean shorts incididunt terry richardson.</p>
+
+      <p>Dreamcatcher nulla in odio artisan. Wayfarers beard hoodie nostrud pour-over. Sustainable forage terry richardson authentic bushwick, lomo messenger bag. Irure aute beard placeat, jean shorts pickled letterpress in. Esse irure pariatur, ennui veniam lo-fi kogi food truck twee fanny pack vegan pitchfork. Ethnic est DIY, letterpress street art wes anderson artisan banh mi VHS viral id officia. Sartorial officia deserunt stumptown, chambray cupidatat PBR carles ut ad.</p>
+    </div>
+    <div class="scrollbar"><div class="handle">&nbsp;</div></div>
+  </div>
+</div>
+
+<div class="demo-2">
+  <h2>Auto-generated components</h2>
+
+  <div class="mask">
+    <p>Semiotics labore vinyl, est craft beer odd future marfa mcsweeney's american apparel swag. Adipisicing quinoa brunch, sustainable dreamcatcher twee aute excepteur chambray. Organic trust fund wayfarers cred, keffiyeh single-origin coffee post-ironic mlkshk sunt marfa jean shorts you probably haven't heard of them. Direct trade incididunt nesciunt gastropub farm-to-table pickled, excepteur sapiente truffaut godard sed. Assumenda veniam iphone, ea banh mi messenger bag +1 fixie kogi synth. Stumptown direct trade ullamco, placeat velit adipisicing ethical williamsburg irure. Squid artisan tattooed ethical enim.</p>
+
+    <p>Umami 8-bit butcher, craft beer laboris bushwick retro quis four loko authentic. Consequat put a bird on it etsy, lomo mlkshk aute semiotics. Ut street art butcher vero, qui typewriter retro photo booth freegan brooklyn incididunt art party truffaut. Keytar lomo mollit adipisicing. Shoreditch leggings esse truffaut laboris. Odio swag chillwave, pop-up twee letterpress enim retro raw denim dreamcatcher elit. Fixie pickled odio truffaut marfa, sunt deserunt.</p>
+
+    <p>Flexitarian duis incididunt, pinterest echo park wayfarers sint. Nesciunt minim incididunt photo booth est, cardigan street art commodo. Helvetica laboris cred anim farm-to-table, pork belly qui letterpress eiusmod exercitation non. Carles flexitarian craft beer semiotics enim, dolore 8-bit street art typewriter put a bird on it sint. Beard vero lo-fi ethnic marfa quinoa, retro helvetica put a bird on it pickled cosby sweater aliquip authentic consectetur. Biodiesel mustache mollit irure, small batch in lomo portland stumptown. Tumblr reprehenderit aute mollit next level, helvetica aesthetic vice biodiesel narwhal art party cillum jean shorts incididunt terry richardson.</p>
+
+    <p>Dreamcatcher nulla in odio artisan. Wayfarers beard hoodie nostrud pour-over. Sustainable forage terry richardson authentic bushwick, lomo messenger bag. Irure aute beard placeat, jean shorts pickled letterpress in. Esse irure pariatur, ennui veniam lo-fi kogi food truck twee fanny pack vegan pitchfork. Ethnic est DIY, letterpress street art wes anderson artisan banh mi VHS viral id officia. Sartorial officia deserunt stumptown, chambray cupidatat PBR carles ut ad.</p>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="./js/jquery.js"><\/script>')</script>
+<script src="../scrollify.min.js"></script>
+<script>
+  jQuery(document).ready(function ($) {
+    // Non auto-generated call
+    $('.demo-1 .mask').Scrollify();
+    
+    // Auto-generated call
+    $('.demo-2 .mask').Scrollify({
+      auto_generate : true
+    });
+  });
+</script>
+
+</body>
+</html>

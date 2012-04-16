@@ -1,0 +1,55 @@
+/* DEMO CSS */
+.demo-1,
+.demo-2 {
+  width:40%;
+  height:400px;
+  margin-left:5%;
+  float:left
+}
+
+
+/* SCROLLIFY CSS */
+.mask {
+  height:100%;
+  border:solid 1px #ccc;
+  position:relative;
+  overflow:hidden;
+}
+
+.content {
+  padding:0 40px;
+  position:absolute;
+}
+
+.scrollbar {
+  height:100%;
+  width:15px;
+  top:0;
+  right:0;
+  background:#efefef;
+  box-shadow:inset 1px 1px 0 #999;
+  border:solid 1px #ccc;
+  border-radius:15px;
+  position:absolute;
+  z-index:2;
+}
+
+.scrollbar .handle {
+  width:14px;
+  height:80px;
+  top:0;
+  left:1px;
+  background:#eeeeee;
+  background-image: -moz-linear-gradient(top,  #cccccc 0%, #eeeeee 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee));
+  background-image: -webkit-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+  background-image: -o-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+  background-image: -ms-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+  background-image: linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 );
+  box-shadow:0 2px 4px #999;
+  border-radius:15px;
+  position:absolute;
+  cursor:pointer;
+  z-index:3;
+}
