@@ -27,9 +27,10 @@
   top:0;
   right:0;
   background:#efefef;
-  box-shadow:inset 1px 1px 0 #999;
-  border:solid 1px #ccc;
-  border-radius:15px;
+  box-shadow:inset 1px 1px 0 #ccc;
+  border:solid 1px #efefef;
+  border-top:0;
+  border-bottom:0;
   position:absolute;
   z-index:2;
 }
@@ -40,14 +41,14 @@
   top:0;
   left:1px;
   background:#eeeeee;
-  background-image: -moz-linear-gradient(top,  #cccccc 0%, #eeeeee 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee));
-  background-image: -webkit-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
-  background-image: -o-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
-  background-image: -ms-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
-  background-image: linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 );
-  box-shadow:0 2px 4px #999;
+  background-image: -moz-linear-gradient(left,  #cccccc 0%, #eeeeee 100%);
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee));
+  background-image: -webkit-linear-gradient(left,  #cccccc 0%,#eeeeee 100%);
+  background-image: -o-linear-gradient(left,  #cccccc 0%,#eeeeee 100%);
+  background-image: -ms-linear-gradient(lefy,  #cccccc 0%,#eeeeee 100%);
+  background-image: linear-gradient(left,  #cccccc 0%,#eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=1 );
+  box-shadow:0 2px 2px #999;
   border-radius:15px;
   position:absolute;
   cursor:pointer;

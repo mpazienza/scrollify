@@ -30,10 +30,12 @@
 					touch_enable  : true,        // (boolean) Should scroll allow for touch
 					wheel_enable  : true,        // (boolean) Should allow for a mousewheel
 					bar_enable    : true,        // (boolean) Should show a scroll bar
+					handle_resize : true,        // (boolean) Should resize handle to match the content/bar ratio
 					auto_generate : false,       // (boolean) Should the bar be auto generated
 					class_bar     : 'scrollbar', // (string) Class used for the scroll bar
 					class_handle  : 'handle',    // (string) Class used for the scroll handle
-					class_content : 'content'
+					class_content : 'content',   // (string) Class used for the content container
+					job_interval  : 250          // (integer) Milliseconds to run the job at
 				},
 				_win = $(window);
 
@@ -54,7 +56,21 @@
 					_hstart  = 0,
 					_tscroll = false,
 					_tstart  = 0,
-					_setup, _up, _down, _move, _wheel, _touchstart, _touchend, _touchmove, _kill;
+					_setup, _up, _down, _move, _wheel, _touchstart, _touchend, _touchmove, _kill, _job;
+			
+			// A job that runs every X milliseconds to perform checks
+			_job = function () {
+				var _p;
+				
+				// Resize handle if needed
+				if (params.handle_resize) {
+					_p = _obj.height()/_cnt.outerHeight();
+					
+					_hdl.animate({
+						height : (_bar.height() * _p) + 'px'
+					});
+				}
+			};
 
 			// Setup the content
 			_setup = function () {
@@ -279,6 +295,9 @@
 			}
 
 			_win.bind('mouseleave', _kill);
+			
+			_job();
+			setInterval(_job, params.job_interval);
 		});
 	};
 }(jQuery, window));
