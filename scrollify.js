@@ -62,6 +62,15 @@
 			_job = function () {
 				var _p;
 				
+				// Hide bar if content is shorter than the scroll area //
+				if (_cnt.outerHeight() < _obj.height()) {
+					if (_bar.is(':visible')) {
+						_bar.hide();
+					}
+				} else if (!_bar.is(':visible')) {
+					_bar.show();
+				}
+				
 				// Resize handle if needed
 				if (params.handle_resize) {
 					_p = _obj.height()/_cnt.outerHeight();
