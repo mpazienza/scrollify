@@ -1,5 +1,5 @@
 /*!
- * Scrollify - v1.0.0
+ * Scrollify - v1.0.1
  *
  * Author: Michael Pazienza
  * Copyright 2012 Mass Relevance
